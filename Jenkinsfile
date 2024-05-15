@@ -2,6 +2,10 @@ pipeline{
 	agent {
 		label 'blue'
 		}
+	environmnet{
+	JAVA_HOME = '/home/grras/project/jdk-11.0.21'
+		}	
+
 	stages{
 		stage("Checkout"){
 			steps{
