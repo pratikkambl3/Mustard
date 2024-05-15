@@ -2,7 +2,7 @@ pipeline{
 	agent {
 		label 'blue'
 		}
-	environmnet{
+	environment{
 	JAVA_HOME = '/home/grras/project/jdk-11.0.21'
 		}	
 
