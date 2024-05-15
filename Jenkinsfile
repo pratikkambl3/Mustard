@@ -16,7 +16,7 @@ pipeline{
 			steps{
 			  sh '/home/grras/project/apache-maven-3.9.6/bin/mvn install'					}
 				}
-		stage("Deployment"){
+	//	stage("Deployment"){
 			steps{
 			sh 'scp target/Mustard.war grras@172.17.0.3:project/apache-tomcat-9.0.89/webapps'
 				}
