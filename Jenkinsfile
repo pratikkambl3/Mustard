@@ -18,7 +18,7 @@ pipeline{
 				}
 		stage("Deployment"){
 			steps{
-			sh 'scp target/Mustard.war grras@172.17.0.3:project/apache-tomcat-9.0.89/webapps'
+			sh 'scp target/Mustard.war home/grras/project/apache-tomcat-9.0.89/webapps'
 				}
 				   }	
 		}
